@@ -6,6 +6,13 @@
   --anispeed: 10s;
 }
 
+/* Media Query for Reduced Motion */
+@media (prefers-reduced-motion) {
+  :root {
+    --anispeed: 40s;
+  }
+}
+
 body {
   overflow: hidden;
   display: flex;
