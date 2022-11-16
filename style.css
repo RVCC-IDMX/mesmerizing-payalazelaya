@@ -9,7 +9,7 @@
 /* Media Query for Reduced Motion */
 @media (prefers-reduced-motion) {
   :root {
-    --anispeed: 40s;
+    --anispeed: 60s;
   }
 }
 
