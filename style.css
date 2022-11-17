@@ -9,7 +9,7 @@
 /* Media Query for Reduced Motion */
 @media (prefers-reduced-motion) {
   :root {
-    --anispeed: 60s;
+    --anispeed: 70s;
   }
 }
 
@@ -25,6 +25,23 @@ body {
   padding: 2rem;
   outline: 1px solid black;
   margin: 3rem;
+}
+
+/* Media Query for Color Scheme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: hsl(0, 0%, 0%);
+  }
+
+  .wrapper {
+    filter: invert(100%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: hsl(0, 0%, 100%); 
+  }
 }
 
 .holder {
